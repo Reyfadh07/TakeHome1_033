@@ -6,11 +6,34 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>you healing</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+    <center>
+        <h1 th:text="${paketnama}"></h1>
+    </center>
+    <hr/>
+    <center>
+        <fieldset>
+            <p>
+                Nama : <l th:text="${paketnama}"></l>
+            </p>
+            <br/><!-- comment -->
+            <p>
+                Lokasi : <l th:text="${paketlok}"></l>
+            </p>
+            <br/><!-- comment -->
+            
+            <p>
+                Gambar :
+                <br/><!-- comment -->
+            </p>
+            <center>
+                <img th:src="${paketgbr}"/>
+            </center>
+        </fieldset>
+    </center>
     </body>
 </html>
