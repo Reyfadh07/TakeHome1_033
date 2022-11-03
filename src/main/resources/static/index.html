@@ -6,11 +6,34 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Healing apa Healing</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <p>
+                    <label> Nama : </label>
+                    <input type="text"  name="nama"/>
+                </p>
+                <br/><!-- comment -->
+                <p>
+                    <label>Lokasi : </label>
+                    <input type="text" name="lok"/>
+                </p>
+                <br/>
+                <p>
+                    <label>Gambar : </label>
+                    <input type="file" name="gbr" accept="image/*" class="form-control-file"/>
+                </p>
+                <br/>
+                <p>
+                    <input type="submit" value="Save" />
+                </p>
+            </fieldset>
+                
+                
+        </form>
     </body>
 </html>
